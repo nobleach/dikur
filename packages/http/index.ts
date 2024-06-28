@@ -1,5 +1,5 @@
 import { JSONSchemaType } from "ajv";
-import "reflect-metadata";
+import '@abraham/reflection';
 export type MiddlewareHandler = (...args: any[]) => Promise<any>
 
 export type Schema = Partial<JSONSchemaType<Object>>
